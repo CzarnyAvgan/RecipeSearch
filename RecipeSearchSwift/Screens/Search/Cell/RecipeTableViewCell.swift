@@ -42,7 +42,7 @@ class RecipeTableViewCell: UITableViewCell {
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.font = .poppinsSemiBold(size: 16)
-        titleLabel.numberOfLines = 0
+        titleLabel.numberOfLines = 2
         
         mainNutrientStackView.translatesAutoresizingMaskIntoConstraints = false
         mainNutrientStackView.axis = .vertical
