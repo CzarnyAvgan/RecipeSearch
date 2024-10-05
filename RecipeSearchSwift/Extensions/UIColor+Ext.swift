@@ -9,10 +9,15 @@ import Foundation
 import UIKit
 
 extension UIColor {
-    static public let lightOrange = UIColor(red: 249, green: 153, blue: 89)
+    static public let superLightOrange = UIColor(red: 249, green: 153, blue: 89)
     static public let appWhite = UIColor(red: 255, green: 255, blue: 255)
     static public let backgroundGrey = UIColor(red: 121, green: 121, blue: 121)
     static public let appBlack = UIColor(red: 0, green: 0, blue: 0)
+    static public let beige = UIColor(red: 251, green: 241, blue: 235)
+    static public let superLightGreen = UIColor(red: 178, green: 203, blue: 198)
+    static public let lightOrange = UIColor(red: 255, green: 176, blue: 23)
+    static public let lightRed = UIColor(red: 245, green: 122, blue: 84)
+
 
     convenience init(red: Int, green: Int, blue: Int) {
         let newRed = CGFloat(red)/255

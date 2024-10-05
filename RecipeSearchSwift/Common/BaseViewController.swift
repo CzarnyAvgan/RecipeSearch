@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import RxSwift
 import RxCocoa
+
 class BaseViewController<T: BaseViewModel>: UIViewController {
     let disposeBag = DisposeBag()
     var viewModel: T!
@@ -27,7 +28,7 @@ class BaseViewController<T: BaseViewModel>: UIViewController {
     }
     
     func setupViews() {
-        view.setGradientBackground(colorOne: .lightOrange, colorTwo: .appWhite)
+        view.setGradientBackground(colorOne: .superLightOrange, colorTwo: .appWhite)
     }
     
     func setupConstraints() {}

@@ -36,5 +36,20 @@ class RecipeService: MoyaProvider<RecipeResource> {
             }
         }
     }
-
+    
+    func getNextRecipies(nextPage: String, completion: ((RecipeResponse?, Error?) -> Void)?) {
+        request(.nextPage(nextPage: nextPage)) { result in
+            switch result {
+            case .success(let response):
+                do {
+                    let decodedValue = try response.map(RecipeResponse.self)
+                    completion?(decodedValue, nil)
+                } catch {
+                    completion?(nil, error)
+                }
+            case .failure(let error):
+                completion?(nil, error)
+            }
+        }
+    }
 }

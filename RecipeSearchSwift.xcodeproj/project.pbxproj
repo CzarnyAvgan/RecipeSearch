@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0325F22CB13C670026E428 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FC0325F12CB13C670026E428 /* Kingfisher */; };
+		FC03261B2CB157B00026E428 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FC03261A2CB157B00026E428 /* RxCocoa */; };
+		FC03263C2CB158610026E428 /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = FC03263B2CB158610026E428 /* Localize_Swift */; };
+		FC03263E2CB158610026E428 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = FC03263D2CB158610026E428 /* CombineMoya */; };
+		FC0326402CB158610026E428 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = FC03263F2CB158610026E428 /* Moya */; };
+		FC0326422CB158610026E428 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = FC0326412CB158610026E428 /* ReactiveMoya */; };
+		FC0326442CB158610026E428 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = FC0326432CB158610026E428 /* RxMoya */; };
+		FC0326462CB158610026E428 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = FC0326452CB158610026E428 /* RxBlocking */; };
+		FC03264E2CB158610026E428 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = FC03264D2CB158610026E428 /* RxRelay */; };
+		FC0326532CB158610026E428 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC0326522CB158610026E428 /* RxSwift */; };
+		FC0326582CB158610026E428 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = FC0326572CB158610026E428 /* RxTest */; };
+		FC03265D2CB158610026E428 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FC03265C2CB158610026E428 /* Kingfisher */; };
 		FC03E4702CB02DC40048BB23 /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = FC03E46F2CB02DC40048BB23 /* Localize_Swift */; };
 		FCB9402B2CB051C300166840 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = FCB9402A2CB051C300166840 /* CombineMoya */; };
 		FCB9402D2CB051C300166840 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = FCB9402C2CB051C300166840 /* Moya */; };
@@ -18,14 +30,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FC03E4402CB008470048BB23 /* PBXContainerItemProxy */ = {
+		FC0326132CB1577D0026E428 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FC03E4212CB008450048BB23 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FC03E4282CB008450048BB23;
 			remoteInfo = RecipeSearchSwift;
 		};
-		FC03E44A2CB008470048BB23 /* PBXContainerItemProxy */ = {
+		FC03E4402CB008470048BB23 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FC03E4212CB008450048BB23 /* Project object */;
 			proxyType = 1;
@@ -34,13 +46,65 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FC03265E2CB158610026E428 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		FC03260D2CB1577D0026E428 /* RecipeSearchSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeSearchSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC03E4292CB008450048BB23 /* RecipeSearchSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeSearchSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC03E43F2CB008470048BB23 /* RecipeSearchSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeSearchSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC03E4492CB008470048BB23 /* RecipeSearchSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeSearchSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FC03261D2CB158260026E428 /* Exceptions for "RecipeSearchSwift" folder in "RecipeSearchSwiftUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppDelegate.swift,
+				Common/BaseViewController.swift,
+				Common/BaseViewModel.swift,
+				Common/SearchTextField.swift,
+				"Extensions/CGFloat+Ext.swift",
+				"Extensions/UIColor+Ext.swift",
+				"Extensions/UIFont+Ext.swift",
+				"Extensions/UIStackView+Ext.swift",
+				"Extensions/UIView+Ext.swift",
+				Models/Recipe.swift,
+				Navigator/AppNavigator.swift,
+				Navigator/Navigator.swift,
+				Navigator/Routes/MainRoutes.swift,
+				"Network/Extensions/TartetType+Ext.swift",
+				Network/Recipe/Model/RecipeResponse.swift,
+				Network/Recipe/RecipeResource.swift,
+				Network/Recipe/RecipeService.swift,
+				SceneDelegate.swift,
+				Screens/Search/Cell/NutrientView/SingleNutrientView.swift,
+				Screens/Search/Cell/RecipeTableViewCell.swift,
+				Screens/Search/EmptyView/EmptyResultsViewController.swift,
+				Screens/Search/SearchSection/SearchResultTopView.swift,
+				Screens/Search/SearchSection/SearchSectionView.swift,
+				Screens/Search/SearchViewController.swift,
+				Screens/Search/SearchViewModel.swift,
+				Screens/Splash/SplashViewController.swift,
+			);
+			target = FC03260C2CB1577D0026E428 /* RecipeSearchSwiftUITests */;
+		};
+		FC0326632CB1592A0026E428 /* Exceptions for "RecipeSearchSwiftUITests" folder in "RecipeSearchSwiftUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FC03260C2CB1577D0026E428 /* RecipeSearchSwiftUITests */;
+		};
 		FC03E4512CB008470048BB23 /* Exceptions for "RecipeSearchSwift" folder in "RecipeSearchSwift" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -50,11 +114,35 @@
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		FC03263A2CB158510026E428 /* Exceptions for "RecipeSearchSwift" folder in "Compile Sources" phase from "RecipeSearchSwiftUITests" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = FC0326092CB1577D0026E428 /* Sources */;
+			membershipExceptions = (
+				Localizable/Localizable.xcstrings,
+				Resources/Assets.xcassets,
+				"Resources/Fonts/Poppins-Bold.ttf",
+				"Resources/Fonts/Poppins-Regular.ttf",
+				"Resources/Fonts/Poppins-SemiBold.ttf",
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		FC03260E2CB1577D0026E428 /* RecipeSearchSwiftUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FC0326632CB1592A0026E428 /* Exceptions for "RecipeSearchSwiftUITests" folder in "RecipeSearchSwiftUITests" target */,
+			);
+			path = RecipeSearchSwiftUITests;
+			sourceTree = "<group>";
+		};
 		FC03E42B2CB008450048BB23 /* RecipeSearchSwift */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				FC03E4512CB008470048BB23 /* Exceptions for "RecipeSearchSwift" folder in "RecipeSearchSwift" target */,
+				FC03261D2CB158260026E428 /* Exceptions for "RecipeSearchSwift" folder in "RecipeSearchSwiftUITests" target */,
+				FC03263A2CB158510026E428 /* Exceptions for "RecipeSearchSwift" folder in "Compile Sources" phase from "RecipeSearchSwiftUITests" target */,
 			);
 			path = RecipeSearchSwift;
 			sourceTree = "<group>";
@@ -64,14 +152,27 @@
 			path = RecipeSearchSwiftTests;
 			sourceTree = "<group>";
 		};
-		FC03E44C2CB008470048BB23 /* RecipeSearchSwiftUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RecipeSearchSwiftUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FC03260A2CB1577D0026E428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC0326582CB158610026E428 /* RxTest in Frameworks */,
+				FC03264E2CB158610026E428 /* RxRelay in Frameworks */,
+				FC0326442CB158610026E428 /* RxMoya in Frameworks */,
+				FC03265D2CB158610026E428 /* Kingfisher in Frameworks */,
+				FC03261B2CB157B00026E428 /* RxCocoa in Frameworks */,
+				FC03263C2CB158610026E428 /* Localize_Swift in Frameworks */,
+				FC0326402CB158610026E428 /* Moya in Frameworks */,
+				FC0326532CB158610026E428 /* RxSwift in Frameworks */,
+				FC0326422CB158610026E428 /* ReactiveMoya in Frameworks */,
+				FC03263E2CB158610026E428 /* CombineMoya in Frameworks */,
+				FC0326462CB158610026E428 /* RxBlocking in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC03E4262CB008450048BB23 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,6 +180,7 @@
 				FCB9406A2CB070F500166840 /* RxRelay in Frameworks */,
 				FCB940312CB051C300166840 /* RxMoya in Frameworks */,
 				FCB940622CB070F500166840 /* RxBlocking in Frameworks */,
+				FC0325F22CB13C670026E428 /* Kingfisher in Frameworks */,
 				FCB9402B2CB051C300166840 /* CombineMoya in Frameworks */,
 				FCB9402F2CB051C300166840 /* ReactiveMoya in Frameworks */,
 				FC03E4702CB02DC40048BB23 /* Localize_Swift in Frameworks */,
@@ -94,22 +196,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC03E4462CB008470048BB23 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC0325FE2CB1552F0026E428 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC03E4202CB008450048BB23 = {
 			isa = PBXGroup;
 			children = (
 				FC03E42B2CB008450048BB23 /* RecipeSearchSwift */,
 				FC03E4422CB008470048BB23 /* RecipeSearchSwiftTests */,
-				FC03E44C2CB008470048BB23 /* RecipeSearchSwiftUITests */,
+				FC03260E2CB1577D0026E428 /* RecipeSearchSwiftUITests */,
+				FC0325FE2CB1552F0026E428 /* Frameworks */,
 				FC03E42A2CB008450048BB23 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,7 +222,7 @@
 			children = (
 				FC03E4292CB008450048BB23 /* RecipeSearchSwift.app */,
 				FC03E43F2CB008470048BB23 /* RecipeSearchSwiftTests.xctest */,
-				FC03E4492CB008470048BB23 /* RecipeSearchSwiftUITests.xctest */,
+				FC03260D2CB1577D0026E428 /* RecipeSearchSwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +230,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FC03260C2CB1577D0026E428 /* RecipeSearchSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC0326152CB1577D0026E428 /* Build configuration list for PBXNativeTarget "RecipeSearchSwiftUITests" */;
+			buildPhases = (
+				FC0326092CB1577D0026E428 /* Sources */,
+				FC03260A2CB1577D0026E428 /* Frameworks */,
+				FC03260B2CB1577D0026E428 /* Resources */,
+				FC03265E2CB158610026E428 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC0326142CB1577D0026E428 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FC03260E2CB1577D0026E428 /* RecipeSearchSwiftUITests */,
+			);
+			name = RecipeSearchSwiftUITests;
+			packageProductDependencies = (
+				FC03261A2CB157B00026E428 /* RxCocoa */,
+				FC03263B2CB158610026E428 /* Localize_Swift */,
+				FC03263D2CB158610026E428 /* CombineMoya */,
+				FC03263F2CB158610026E428 /* Moya */,
+				FC0326412CB158610026E428 /* ReactiveMoya */,
+				FC0326432CB158610026E428 /* RxMoya */,
+				FC0326452CB158610026E428 /* RxBlocking */,
+				FC03264D2CB158610026E428 /* RxRelay */,
+				FC0326522CB158610026E428 /* RxSwift */,
+				FC0326572CB158610026E428 /* RxTest */,
+				FC03265C2CB158610026E428 /* Kingfisher */,
+			);
+			productName = RecipeSearchSwiftUITests;
+			productReference = FC03260D2CB1577D0026E428 /* RecipeSearchSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		FC03E4282CB008450048BB23 /* RecipeSearchSwift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC03E4522CB008470048BB23 /* Build configuration list for PBXNativeTarget "RecipeSearchSwift" */;
@@ -152,6 +290,7 @@
 				FCB940612CB070F500166840 /* RxBlocking */,
 				FCB940652CB070F500166840 /* RxCocoa */,
 				FCB940692CB070F500166840 /* RxRelay */,
+				FC0325F12CB13C670026E428 /* Kingfisher */,
 			);
 			productName = RecipeSearchSwift;
 			productReference = FC03E4292CB008450048BB23 /* RecipeSearchSwift.app */;
@@ -180,29 +319,6 @@
 			productReference = FC03E43F2CB008470048BB23 /* RecipeSearchSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FC03E4482CB008470048BB23 /* RecipeSearchSwiftUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FC03E45A2CB008470048BB23 /* Build configuration list for PBXNativeTarget "RecipeSearchSwiftUITests" */;
-			buildPhases = (
-				FC03E4452CB008470048BB23 /* Sources */,
-				FC03E4462CB008470048BB23 /* Frameworks */,
-				FC03E4472CB008470048BB23 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FC03E44B2CB008470048BB23 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				FC03E44C2CB008470048BB23 /* RecipeSearchSwiftUITests */,
-			);
-			name = RecipeSearchSwiftUITests;
-			packageProductDependencies = (
-			);
-			productName = RecipeSearchSwiftUITests;
-			productReference = FC03E4492CB008470048BB23 /* RecipeSearchSwiftUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,14 +329,14 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					FC03260C2CB1577D0026E428 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = FC03E4282CB008450048BB23;
+					};
 					FC03E4282CB008450048BB23 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 					FC03E43E2CB008470048BB23 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = FC03E4282CB008450048BB23;
-					};
-					FC03E4482CB008470048BB23 = {
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = FC03E4282CB008450048BB23;
 					};
@@ -239,6 +355,7 @@
 				FC03E46E2CB02DC40048BB23 /* XCRemoteSwiftPackageReference "Localize-Swift" */,
 				FCB940292CB051C300166840 /* XCRemoteSwiftPackageReference "Moya" */,
 				FCB940602CB070F500166840 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				FC0325F02CB13C670026E428 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FC03E42A2CB008450048BB23 /* Products */;
@@ -247,12 +364,19 @@
 			targets = (
 				FC03E4282CB008450048BB23 /* RecipeSearchSwift */,
 				FC03E43E2CB008470048BB23 /* RecipeSearchSwiftTests */,
-				FC03E4482CB008470048BB23 /* RecipeSearchSwiftUITests */,
+				FC03260C2CB1577D0026E428 /* RecipeSearchSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FC03260B2CB1577D0026E428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC03E4272CB008450048BB23 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,16 +391,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC03E4472CB008470048BB23 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC0326092CB1577D0026E428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
 		FC03E4252CB008450048BB23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,29 +415,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC03E4452CB008470048BB23 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FC0326142CB1577D0026E428 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC03E4282CB008450048BB23 /* RecipeSearchSwift */;
+			targetProxy = FC0326132CB1577D0026E428 /* PBXContainerItemProxy */;
+		};
 		FC03E4412CB008470048BB23 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FC03E4282CB008450048BB23 /* RecipeSearchSwift */;
 			targetProxy = FC03E4402CB008470048BB23 /* PBXContainerItemProxy */;
 		};
-		FC03E44B2CB008470048BB23 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FC03E4282CB008450048BB23 /* RecipeSearchSwift */;
-			targetProxy = FC03E44A2CB008470048BB23 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		FC0326162CB1577D0026E428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CYFZ3C655U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecipeSearchSwiftUITests/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JustSkill.RecipeSearchSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RecipeSearchSwift;
+			};
+			name = Debug;
+		};
+		FC0326172CB1577D0026E428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CYFZ3C655U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecipeSearchSwiftUITests/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JustSkill.RecipeSearchSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RecipeSearchSwift;
+			};
+			name = Release;
+		};
 		FC03E4532CB008470048BB23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -529,43 +682,18 @@
 			};
 			name = Release;
 		};
-		FC03E45B2CB008470048BB23 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CYFZ3C655U;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = JustSkill.RecipeSearchSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RecipeSearchSwift;
-			};
-			name = Debug;
-		};
-		FC03E45C2CB008470048BB23 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CYFZ3C655U;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = JustSkill.RecipeSearchSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RecipeSearchSwift;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FC0326152CB1577D0026E428 /* Build configuration list for PBXNativeTarget "RecipeSearchSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC0326162CB1577D0026E428 /* Debug */,
+				FC0326172CB1577D0026E428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FC03E4242CB008450048BB23 /* Build configuration list for PBXProject "RecipeSearchSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -593,18 +721,17 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC03E45A2CB008470048BB23 /* Build configuration list for PBXNativeTarget "RecipeSearchSwiftUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FC03E45B2CB008470048BB23 /* Debug */,
-				FC03E45C2CB008470048BB23 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FC0325F02CB13C670026E428 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.3;
+			};
+		};
 		FC03E46E2CB02DC40048BB23 /* XCRemoteSwiftPackageReference "Localize-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/marmelroy/Localize-Swift";
@@ -632,6 +759,66 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FC0325F12CB13C670026E428 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC0325F02CB13C670026E428 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		FC03261A2CB157B00026E428 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCB940602CB070F500166840 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		FC03263B2CB158610026E428 /* Localize_Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC03E46E2CB02DC40048BB23 /* XCRemoteSwiftPackageReference "Localize-Swift" */;
+			productName = Localize_Swift;
+		};
+		FC03263D2CB158610026E428 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCB940292CB051C300166840 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		FC03263F2CB158610026E428 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCB940292CB051C300166840 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		FC0326412CB158610026E428 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCB940292CB051C300166840 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		FC0326432CB158610026E428 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCB940292CB051C300166840 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		FC0326452CB158610026E428 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCB940602CB070F500166840 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		FC03264D2CB158610026E428 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCB940602CB070F500166840 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		FC0326522CB158610026E428 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCB940602CB070F500166840 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		FC0326572CB158610026E428 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCB940602CB070F500166840 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		FC03265C2CB158610026E428 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC0325F02CB13C670026E428 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		FC03E46F2CB02DC40048BB23 /* Localize_Swift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FC03E46E2CB02DC40048BB23 /* XCRemoteSwiftPackageReference "Localize-Swift" */;

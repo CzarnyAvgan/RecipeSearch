@@ -28,7 +28,7 @@ class SplashViewController: UIViewController {
     }
     
     func setupViews() {
-        view.setGradientBackground(colorOne: .lightOrange, colorTwo: .appWhite)
+        view.setGradientBackground(colorOne: .superLightOrange, colorTwo: .appWhite)
         
         [backgroundImage, labelsStackView, continueButton].forEach { subview in
             subview.translatesAutoresizingMaskIntoConstraints = false

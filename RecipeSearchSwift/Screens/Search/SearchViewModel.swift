@@ -16,9 +16,10 @@ enum SearchState {
 }
 
 class SearchViewModel: BaseViewModel {
-    let recipeService: RecipeService = .shared
+    var recipeService: RecipeService = .shared
     let recipes = BehaviorRelay<[Hit]>(value: [])
     let searchState = BehaviorRelay<SearchState>(value: .search)
+    var nextPageURLString: String?
     
     func getRecipes(query: String) {
         state.accept(.loading)
@@ -30,9 +31,26 @@ class SearchViewModel: BaseViewModel {
                     changeSearchState(to: .empty)
                     return
                 }
-                
                 recipes.accept(response.hits ?? [])
                 changeSearchState(to: .results(title: query))
+                nextPageURLString = response.links?.next?.href
+            } else if let error {
+                state.accept(.error(error.localizedDescription))
+            }
+        }
+    }
+    
+    func loadMoreRecipes() {
+        guard let nextPageURLString else { return }
+        recipeService.getNextRecipies(nextPage: nextPageURLString) { [weak self] response, error in
+            guard let self else { return }
+            if let response {
+                state.accept(.idle)
+                if (response.hits ?? []).isEmpty {
+                    return
+                }
+                self.recipes.accept(self.recipes.value + (response.hits ?? []))
+                self.nextPageURLString = response.links?.next?.href
             } else if let error {
                 state.accept(.error(error.localizedDescription))
             }

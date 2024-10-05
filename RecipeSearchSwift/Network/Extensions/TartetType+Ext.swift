@@ -21,6 +21,11 @@ enum BaseParameter: String {
 }
 
 extension TargetType {
+    var apiURL: URL {
+        let baseApiString = (Bundle.main.object(forInfoDictionaryKey: "API_URL") as? String) ?? ""
+        return URL(string: baseApiString)!
+    }
+    
     var baseURL: URL {
         let baseApiString = (Bundle.main.object(forInfoDictionaryKey: "API_URL") as? String) ?? ""
         return URL(string: baseApiString)!
@@ -29,8 +34,6 @@ extension TargetType {
     var headers: [String: String]? {
         return getHeaders()
     }
-    
-
 }
 
 extension TargetType {

@@ -27,7 +27,7 @@ struct TotalNutrient: Codable {
 }
 
 struct Nutrient: Codable {
-    let label: String
-    let quantity: Double
-    let unit: String
+    let label: String?
+    let quantity: Float?
+    let unit: String?
 }
